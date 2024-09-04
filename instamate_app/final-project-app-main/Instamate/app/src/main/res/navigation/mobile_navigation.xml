@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/feedFragment">
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.instamate.fragments.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.instamate.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.instamate.fragments.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+        <action
+            android:id="@+id/action_postFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.instamate.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editUserFragment"
+            app:destination="@id/editUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserFragment"
+        android:name="com.example.instamate.fragments.EditUserFragment"
+        android:label="fragment_editUser"
+        tools:layout="@layout/fragment_edit_user" >
+        <action
+            android:id="@+id/action_editUserFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_profileFragment"
+        app:destination="@id/profileFragment" />
+
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.instamate.fragments.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+        <argument
+            android:name="sourceFragment"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_editUserFragment_to_imageFragment"
+            app:destination="@id/imageFragment">
+            <argument
+                android:name="sourceFragment"
+                app:argType="string"
+                android:defaultValue="editUserFragment" />
+        </action>
+        <action
+            android:id="@+id/action_postFragment_to_imageFragment"
+            app:destination="@id/imageFragment">
+            <argument
+                android:name="sourceFragment"
+                app:argType="string"
+                android:defaultValue="postFragment" />
+        </action>
+
+
+
+</navigation>

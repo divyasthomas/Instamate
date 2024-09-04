@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#7C7777</color>
+    <color name="logo">#E91E63</color>
+    <color name="register">#3F51B5</color>
+    <color name="login">#3F51B5</color>
+    <color name="green">#367C39</color>
+    <color name="cancel">#C6162C</color>
+    <color name="lightblue">#0571A1</color>
+    <color name="blue">#1844C6</color>
+
+    <color name="darkgrey">#484A4A</color>
+
+
+
+
+
+</resources>

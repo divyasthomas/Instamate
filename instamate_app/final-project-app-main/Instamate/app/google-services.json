@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926288930759",
+    "project_id": "instamate-271b8",
+    "storage_bucket": "instamate-271b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926288930759:android:d1e9bbbafd1ddadc2a1be2",
+        "android_client_info": {
+          "package_name": "com.example.instamate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "enter key"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
