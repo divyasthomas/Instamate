@@ -1,6 +1,5 @@
 # Instamate
-Social media App
-
+Instamate is a social media app that offers real-time interactive feeds, case-insensitive search and follow functionality, customizable user profiles, and seamless post creation with Firebase authentication and storage.
 [Instamate .pdf](https://github.com/user-attachments/files/16790757/Instamate.pdf)
 
 ## Major subsystems Screenshots
